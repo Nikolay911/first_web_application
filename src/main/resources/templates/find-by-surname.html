@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>FIND</h1>
+<form action="#" th:action="@{/find}" th:object="${user}" method="post">
+    <p>Surname: <input type="text" th:field="*{surname}" /></p>
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p><input type="submit" value="find by surname" /> <input type="reset" value="Reset" /></p>
+    <p><a href="/user-add">Go to user blok</a></p>
+    <p><a href="/mailpage">Go to send mail blok</a></p>
+    <p><a href="/uploadForm">Go to upload file blok</a></p>
+</form>
+</body>
+</html>
